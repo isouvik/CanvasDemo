@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>First canvas 15/04/2017</title>
+<style type="text/css">
+canvas { border:1px solid #666; }
+</style>
+
+</head>
+
+<body>
+<canvas id="canvas" width="800" height="600">
+Sorry your browser does not support the canvas tag.
+</canvas>	
+<input type="buttion" value="color change" onClick="colorChange()">
+
+<script>
+ var canvas = document.getElementById('canvas');
+ 
+ var ctx = canvas.getContext('2d');
+
+function cakeTopHalf1(color){
+  ctx.fillStyle = 'black';
+  ctx.fillRect(50, 50, 500, 20);
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth   = 2;
+  ctx.strokeRect(50, 50, 500, 20);
+}
+
+<script src="jquery-3.2.1.min.js"></script>
+function colorChange(){
+	var fillChange = $(this).css('bg-color');
+}
+</script>
+</body>
+</html>
